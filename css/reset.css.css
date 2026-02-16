@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+button {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+ul, ol {
+    list-style: none;
+}
+body {
+    color: white;
+}
+button {
+    background-color: var(--color-primary-100);
+    font-weight: var(--font-weight-semibold);
+}

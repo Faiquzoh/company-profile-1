@@ -1,0 +1,134 @@
+body {
+  background-color: black;
+}
+
+body * {
+  color: white;
+  font-family: var(--font-family-sans);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: var(--spacing-7xl);
+}
+
+header h2 {
+  font-size: var(--text-display-xs);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--text-display-xs-line-height);
+  letter-spacing: var();
+}
+
+header > button.contact {
+  display: none;
+}
+
+nav.mobile {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-lg);
+}
+
+nav ul {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-lg);
+}
+
+nav ul li a {
+  /* 36px */
+  height: 2.25rem;
+  display: flex;
+  align-items: center;
+  font-size: var(--text-sm);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--text-sm-line-height);
+  letter-spacing: var();
+}
+
+button.contact {
+  background-color: var(--color-primary-100);
+  padding: var(--spacing-6xl);
+  font-size: var(--text-sm);
+  font-weight: var(--font-weight-semibold);
+  line-height: var(--text-sm-line-height);
+  letter-spacing: var();
+  border-radius: var(--radius-full);
+}
+
+/* Default display mobile */
+.overlay,
+header nav.desktop,
+header button.close-menu,
+nav.mobile {
+  display: none;
+}
+
+/* Mobile menu open state */
+body.menu-open .overlay,
+body.menu-open nav.mobile,
+body.menu-open header button.close-menu {
+  display: flex;
+}
+
+body.menu-open header button.hamburger-menu {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* 84px */
+    height: 5.25rem;
+  }
+
+  header h2 {
+    /* 160px */
+    width: 10rem;
+    text-align: center;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: row;
+    gap: var(--spacing-lg);
+  }
+
+  nav ul li a {
+    /* 36px */
+    height: 2.25rem;
+    display: flex;
+    align-items: center;
+    font-size: var(--text-sm);
+    font-weight: var(--font-weight-regular);
+    line-height: var(--text-sm-line-height);
+    letter-spacing: var();
+    padding-inline: var(--spacing-xl);
+  }
+
+  header nav.desktop,
+  header > button.contact {
+    display: block;
+  }
+
+  button.contact {
+    /* 44px */
+    height: 2.75rem;
+    /* 38.5px */
+    padding-inline: 2.4063rem;
+    font-size: var(--text-md);
+    font-weight: var(--font-weight-semibold);
+    line-height: var(--text-md-line-height);
+    letter-spacing: var(--text-md-letter-spacing);
+  }
+
+  nav.mobile,
+  header button.close-menu,
+  header button.hamburger-menu {
+    display: none;
+  }
+}

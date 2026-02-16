@@ -1,0 +1,24 @@
+/*reusable classes */
+.custom-container-x1 {
+    margin: 0 auto;
+    max-width: calc(1440px - 280px);
+    padding-inline: var(--spacing-x1);
+}
+
+.custom-container-2x1 {
+    margin: 0 auto;
+    max-width: calc(1440px - 280px);
+    padding-inline: var(--spacing-x1);
+}
+
+.overlay {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+}
+
+.fixed-container {
+    position: fixed;
+    width: 100%;
+}
