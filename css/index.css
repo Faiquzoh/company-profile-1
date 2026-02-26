@@ -32,6 +32,10 @@ nav.mobile {
   z-index: 1;
 }
 
+nav.mobile ul li a {
+  justify-content: start;
+}
+
 nav ul {
   display: flex;
   flex-direction: column;
