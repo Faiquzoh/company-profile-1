@@ -21,7 +21,7 @@ header h2 {
   letter-spacing: var();
 }
 
-header > button.contact {
+header > a.contact {
   display: none;
 }
 
@@ -29,6 +29,7 @@ nav.mobile {
   display: flex;
   flex-direction: column;
   gap: var(--spacing-lg);
+  z-index: 1;
 }
 
 nav ul {
@@ -40,17 +41,15 @@ nav ul {
 nav ul li a {
   /* 36px */
   height: 2.25rem;
-  display: flex;
-  align-items: center;
   font-size: var(--text-sm);
   font-weight: var(--font-weight-regular);
   line-height: var(--text-sm-line-height);
   letter-spacing: var();
 }
 
-button.contact {
+a.contact {
+  height: var(--spacing-6xl);
   background-color: var(--color-primary-100);
-  padding: var(--spacing-6xl);
   font-size: var(--text-sm);
   font-weight: var(--font-weight-semibold);
   line-height: var(--text-sm-line-height);
@@ -62,6 +61,7 @@ button.contact {
 .overlay,
 header nav.desktop,
 header button.close-menu,
+header > a.contact,
 nav.mobile {
   display: none;
 }
@@ -101,8 +101,6 @@ body.menu-open header button.hamburger-menu {
   nav ul li a {
     /* 36px */
     height: 2.25rem;
-    display: flex;
-    align-items: center;
     font-size: var(--text-sm);
     font-weight: var(--font-weight-regular);
     line-height: var(--text-sm-line-height);
@@ -111,11 +109,11 @@ body.menu-open header button.hamburger-menu {
   }
 
   header nav.desktop,
-  header > button.contact {
-    display: block;
+  header > a.contact {
+    display: flex;
   }
 
-  button.contact {
+  header > a.contact {
     /* 44px */
     height: 2.75rem;
     /* 38.5px */

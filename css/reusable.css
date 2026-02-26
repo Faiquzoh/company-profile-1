@@ -1,14 +1,14 @@
 /*reusable classes */
-.custom-container-x1 {
+.custom-container-xl {
     margin: 0 auto;
-    max-width: calc(1440px - 280px);
-    padding-inline: var(--spacing-x1);
+    max-width: calc(1440px - 280px + 32px);
+    padding-inline: var(--spacing-xl);
 }
 
-.custom-container-2x1 {
+.custom-container-2xl {
     margin: 0 auto;
     max-width: calc(1440px - 280px);
-    padding-inline: var(--spacing-x1);
+    padding-inline: var(--spacing-xl);
 }
 
 .overlay {
